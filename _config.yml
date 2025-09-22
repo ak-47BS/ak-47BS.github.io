@@ -1,0 +1,9 @@
+title: 我的博客  # 你的博客标题
+description: 这是我的个人博客  # 博客描述
+baseurl: ""  # 如果你的站点不在根目录，请填写子路径，否则留空
+url: "https://<你的用户名>.github.io"  # 你的网站地址
+theme: minima  # 使用的主题，minima是Jekyll默认主题
+
+# 其他配置，如作者信息等
+author:
+  name: ak-47BS
