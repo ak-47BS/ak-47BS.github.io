@@ -1,20 +1,41 @@
----
-layout: home
-title: 首页
----
-
-# 欢迎来到我的博客
-
-这里将是分享技术与思考的地方。
-
-![一张图片](https://octodex.github.com/images/minion.png)
-
-最近文章：
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
-    </li>
-  {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的GitHub论坛</title>
+  <!-- 引入Bootstrap CSS (快速美化页面) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="text-center mb-4">📚 我的知识论坛</h1>
+    
+    <!-- 帖子列表 -->
+    <div class="row">
+      <!-- 帖子1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h2 class="card-title">《JavaScript入门指南》</h2>
+            <p class="card-text">从零开始学习JavaScript的基础语法与实践案例...</p>
+            <a href="posts/post1.html" class="btn btn-primary">阅读全文</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 帖子2 -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h2 class="card-title">《GitHub高级技巧》</h2>
+            <p class="card-text">分享GitHub Actions、Pages等高效开发技巧...</p>
+            <a href="posts/post2.html" class="btn btn-primary">阅读全文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
